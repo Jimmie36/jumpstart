@@ -60,6 +60,18 @@ body{
   max-width: 51.3rem;
   text-align: center;
 }
+
+@media only screen and (max-width: 767px) {
+  .jumbotron h1 {
+    font-size: 5.7rem;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .jumbotron h1 {
+    font-size: 4rem;
+  }
+}
 /*MDM code modified.*/
 text-shadow: -1px -1px 1px #aaa,
              0px 4px 1px rgba(0,0,0,0.5),
