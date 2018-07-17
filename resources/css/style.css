@@ -1,51 +1,103 @@
 html{
-
+font-size: 14px;
 }
 
 body{
   font-family: 'Open Sans', sans-serif;
-  font-size: 18px;
 }
 
+/*Remove this container to prevent override with BS.*/
+/*
 .container{
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  /*Added from solution.*/
+  /*margin-top: -7rem; */
 }
+*/
 
+/*
 .container img{
   width: 100%;
   height: auto;
 }
+*/
 
-.jumbotron{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+/*Add from solution.*/
+.featured-project{
+  margin-top: -7rem;
+}
+
+.featured-project .image-container{
+  height: 19rem;
+  margin-top: 20px;
+}
+/* Bootstrap Overrides from solution */
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover {
+  background-color: inherit;
+  color: #399bd1;
+}
+
+.btn-primary {
+  width: 160px;
+  padding: 1.3rem 0;
+  border: 0;
+  margin-top: 2.8rem;
+  background-color: #399bd1;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+  transition: .5s box-shadow;
+}
+
+.btn-primary:hover {
+  background-color: #399bd1;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.9);
+}
+
+.btn-primary:active {
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0.5);
+}
+
+/* Slick Overrides */
+
+.slick-slide {
+  outline: none;
+}
+
+.jumbotron {
+  height: 44rem;
+  padding-top: 10rem;
+  text-align: center;
   background-size: cover;
-  width: 100%;
-  height: 30.8rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
 }
 
 .jumbotron-bike{
   background-image: url("../images/jumbotron-bike.jpg");
-  width: 100%;
+  /*width: 100%;*/
 }
 
 .jumbotron-beer{
   background-image: url("../images/jumbotron-beer.jpg");
-  width: 100%;
+  /*width: 100%;*/
 }
 
 .jumbotron-flowers{
   background-image: url("../images/jumbotron-flowers.jpg");
-  width: 100%;
+  /*width: 100%;*/
 }
 
 .jumbotron-duffel{
   background-image: url("../images/jumbotron-duffel.jpg");
-  width: 100%;
+  /*width: 100%;*/
 }
 
 /*Added from solution.*/
@@ -56,8 +108,17 @@ body{
 }
 
 .jumbotron p{
+  color: #eee;
   font-size: 1.5rem;
   max-width: 51.3rem;
+  /*text-align: center;*/
+  margin: auto;
+}
+
+.relative-wrapper {
+  position: relative;
+  top: -16rem;
+  width: 100%;
   text-align: center;
 }
 
@@ -78,10 +139,6 @@ text-shadow: -1px -1px 1px #aaa,
              4px 4px 5px rgba(0,0,0,0.7),
              0px 0px 7px rgba(0,0,0,0.4);
 
-html {
-font-size: 10px;
-}
-
 h1 {
   font-size: 6rem;
   color: #fff;
@@ -94,39 +151,7 @@ h1 + p {
 
 p {
   font-size: 1rem;
-  color: #fff;
-}
-
-.styled {
-    border: 0;
-    line-height: 2.5;
-    padding: .5rem 1rem;
-    font-size: 1rem;
-    text-align: center;
-    color: #fff;
-    text-shadow: 1px 1px 1px #000;
-    border-radius: 10px;
-    background-color: rgba(220, 0, 0, 1);
-    background-image: linear-gradient(to top left,
-                                      rgba(0, 0, 0, .2),
-                                      rgba(0, 0, 0, .2) 30%,
-                                      rgba(0, 0, 0, 0));
-    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
-                inset -2px -2px 3px rgba(0, 0, 0, .6);
-}
-
-.styled:hover {
-    background-color: rgba(255, 0, 0, 1);
-    color: #fff;
-}
-
-.styled:active {
-    box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
-                inset 2px 2px 3px rgba(0, 0, 0, .6);
-}
-
-.styled .a{
-  color: #fff;
+  color: #003366;
 }
 
 /*Featured project section*/
@@ -135,20 +160,32 @@ h2{
   color: #007bff;
 }
 
+/*Remove to avoid conflict with BS.*/
+/*
 .image-container{
   display: flex;
   flex-direction: column;
   width: 50%;
   /*flex-grow may not be needed*/
-  flex-grow: 2;
+  /*flex-grow: 2;*/
+/*}*/
+*/
+
+.featured-project{
+  margin-top: .7rem;
 }
 
+featured-project .image-container{
+  height 19rem;
+  margin-top: 20px;
+}
 .image-container{
   overflow: hidden;
 }
+
 .image-container img{
-  width: 100%;
-  height: auto;
+  /*width: 100%;*/
+  /*height: auto;*/
   opacity: 0.7;
   transition: transform .5s, opacity .5s;
 }
@@ -219,6 +256,12 @@ h2{
   margin-bottom: 1rem;
   margin-right: 1rem;
   word-wrap: normal;
+}
+
+.help{
+  padding: 5.2rem 0;
+  background-color: #f3f3f3;
+  text-align: center;
 }
 
 .inventor-info-container{

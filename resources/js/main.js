@@ -1,14 +1,14 @@
    $(document).ready(function(){
      $('.carousel').slick({
-       autoPlay: true,
+       slidesToScroll: 1,
+	   autoPlay: true,
        autoPlaySpeed: 4000,
        arrows: false,
        draggable: false,
        pauseOnFocus: false,
-       pauseOnHover: false,
-       slidesToScroll: 1,
-       swipe: false
+       pauseOnHover: false      
      });
+	 
      var lastScrollTop = 0;
      $(window).scroll(function(){
        var scrollTop = $(this).scrollTop();
