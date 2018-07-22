@@ -1,8 +1,8 @@
    $(document).ready(function(){
      $('.carousel').slick({
        slidesToScroll: 1,
-	   autoPlay: true,
-       autoPlaySpeed: 4000,
+	   autoplay: true,
+       autoPalaySpeed: 4000,
        arrows: false,
        draggable: false,
        pauseOnFocus: false,

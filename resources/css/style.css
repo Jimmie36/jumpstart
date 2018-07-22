@@ -11,8 +11,6 @@ body{
 .container{
   display: flex;
   flex-direction: row;
-  /*Added from solution.*/
-  /*margin-top: -7rem; */
 }
 */
 
@@ -80,22 +78,22 @@ body{
     1px 1px 0 #000;
 }
 
-.jumbotron-bike{
+.background-bike{
   background-image: url("../images/jumbotron-bike.jpg");
   /*width: 100%;*/
 }
 
-.jumbotron-beer{
+.background-beer{
   background-image: url("../images/jumbotron-beer.jpg");
   /*width: 100%;*/
 }
 
-.jumbotron-flowers{
+.background-flowers{
   background-image: url("../images/jumbotron-flowers.jpg");
   /*width: 100%;*/
 }
 
-.jumbotron-duffel{
+.background-duffel{
   background-image: url("../images/jumbotron-duffel.jpg");
   /*width: 100%;*/
 }
@@ -170,10 +168,6 @@ h2{
   /*flex-grow: 2;*/
 /*}*/
 */
-
-.featured-project{
-  margin-top: .7rem;
-}
 
 featured-project .image-container{
   height 19rem;
